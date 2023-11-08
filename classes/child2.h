@@ -4,6 +4,9 @@
 
 using namespace std;
 
-class child2 : public parent {
-
+class movie : public media {
+  int duration;
+  int rating;
+  char director[30]; 
+  
 }

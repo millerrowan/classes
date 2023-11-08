@@ -4,6 +4,8 @@
 
 using namespace std;
 
-class child : public parent {
+class videogame : public media {
   //include what is unique to child class like publisher and rating
+  int rating;
+  char publisher[30];
 }
