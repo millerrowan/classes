@@ -1,6 +1,8 @@
 #include <iostream>
 #include "parent.h"
 #include "child.h" 
+#include <vector>
+#include <cstring> 
 
 using namespace std;
 

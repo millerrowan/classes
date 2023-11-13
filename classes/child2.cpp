@@ -1,5 +1,7 @@
 #include <iostream>
 #include "child2.h"
+#include <cstring>
+
 //moviescd 
 
 movie::Movie(char* title[30], int year, char* publisher[30], int rating, int duration) {
@@ -20,7 +22,7 @@ int movie::getDuration() {
 
 }
 
-char movie::getDirector() {
+char* movie::getDirector() {
   return director; 
 
 }

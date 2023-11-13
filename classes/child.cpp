@@ -1,8 +1,10 @@
 #include <iostream>
 #include "child.h"
+#include <cstring>
+
 //video games
 
-videgogame::VideoGame(char* publisher[30], char* title[30], int year, int rating) {
+videogame::VideoGame(char* publisher[30], char* title[30], int year, int rating) {
   cout << "Enter the title" << endl;
   cin >> title;
   cout << "Enter the year published" << endl;
@@ -18,6 +20,6 @@ int videogame::getRating() {
   return rating; 
 }
 
-char videogame::getPublisher() {
+char* videogame::getPublisher() {
   return publisher; 
 }

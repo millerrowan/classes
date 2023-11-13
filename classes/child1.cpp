@@ -1,5 +1,7 @@
 #include <iostream>
 #include "child1.h"
+#include <cstring>
+
 //music
 
 //defines 
@@ -23,12 +25,12 @@ int music::getDuration() {
   return duration; 
 }
 
-char music::getArtist() {
+char* music::getArtist() {
   return artist; 
 
 }
 
-char music::getPublisher() {
+char* music::getPublisher() {
   return publisher; 
 
 }
