@@ -4,9 +4,7 @@
 
 //music
 
-//defines 
-
-music::Music(char* title[30], int year, char* publisher, char* artist[30], int duration) {
+music::music() {
   cout << "Enter the title" << endl;
   cin >> title;
   cout << "Enter the year published" << endl;
@@ -15,10 +13,8 @@ music::Music(char* title[30], int year, char* publisher, char* artist[30], int d
   cin >> publisher;
   cout << "Enter the artist" << endl;
   cin >> artist;
-  cout << "Enter the duration" << endl;
+  cout << "Enter the duration in seconds" << endl;
   cin >> duration;
-}
-
 }
 
 int music::getDuration() {
@@ -33,4 +29,13 @@ char* music::getArtist() {
 char* music::getPublisher() {
   return publisher; 
 
+}
+
+void music::print() {
+  cout << "Title: " << title << endl;
+  cout << "Year: " << year << endl;
+  cout << "Publisher: " << publisher << endl;
+  cout << "Artist: " << artist << endl;
+  cout << "Duration: " << duration << endl; 
+  
 }

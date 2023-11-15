@@ -12,10 +12,11 @@ using namespace std;
 class music : public media {
 
  public:
-  Music(title, year, publisher, artist, duration); 
+  music(); 
   int getDuration();
   char* getArtist();
-  char* getPublisher(); 
+  char* getPublisher();
+  void print();
  protected: 
   int duration;
   char artist[30];

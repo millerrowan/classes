@@ -1,10 +1,11 @@
+
 #include <iostream>
 #include "child2.h"
 #include <cstring>
 
-//moviescd 
+//movies 
 
-movie::Movie(char* title[30], int year, char* publisher[30], int rating, int duration) {
+movie::movie() {
   cout << "Enter the title" << endl;
   cin >> title;
   cout << "Enter the year published" << endl;
@@ -13,7 +14,7 @@ movie::Movie(char* title[30], int year, char* publisher[30], int rating, int dur
   cin >> director;
   cout << "Enter a rating" << endl;
   cin >> rating;
-  cout << "Enter the duration" << endl;
+  cout << "Enter the duration in minutes" << endl;
   cin >> duration;
 }
   
@@ -29,4 +30,12 @@ char* movie::getDirector() {
 
 int movie::getRating() {
   return rating; 
+}
+
+void movie::print() {
+  cout << "Title: " << title << endl;
+  cout << "Year: " << year << endl;
+  cout << "Director: " << director << endl;
+  cout << "Rating: " << rating << endl;
+  cout << "Duration: " << duration << endl; 
 }

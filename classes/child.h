@@ -12,9 +12,10 @@ using namespace std;
 class videogame : public media {
   //include what is unique to child class like publisher and rating
 public: 
-  VideoGame(publisher, title, year, rating);
+  videogame();
   int getRating();
-  char* getPublisher(); 
+  char* getPublisher();
+  void print();
 protected:
   int rating;
   char publisher[30]; 

@@ -4,7 +4,7 @@
 
 //video games
 
-videogame::VideoGame(char* publisher[30], char* title[30], int year, int rating) {
+videogame::videogame() {
   cout << "Enter the title" << endl;
   cin >> title;
   cout << "Enter the year published" << endl;
@@ -22,4 +22,11 @@ int videogame::getRating() {
 
 char* videogame::getPublisher() {
   return publisher; 
+}
+
+void videogame::print() {
+  cout << "Title: " << title << endl;
+  cout << "Year: " << year << endl;
+  cout << "Publisher: " << publisher << endl;
+  cout << "Rating: " << rating << endl; 
 }

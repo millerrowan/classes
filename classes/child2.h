@@ -12,10 +12,11 @@ using namespace std;
 class movie : public media {
 
 public:
-  Movie(title, year, publisher, rating, duration); 
+  movie(); 
   int getDuration();
   char* getDirector();
   int getRating();
+  void print();
 protected: 
   int duration;
   int rating;

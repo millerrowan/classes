@@ -4,7 +4,7 @@
 
 //all digital media
 
-//defines all the function in the parent class lie getTitle, getYear
+//defines all the function in the parent class like getTitle, getYear
 
 int media::getYear() {
   return year; 
@@ -12,4 +12,8 @@ int media::getYear() {
 
 char* media::getTitle() {
   return title; 
+}
+
+void media::print() {
+  
 }

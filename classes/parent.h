@@ -13,8 +13,8 @@ class media {
  public:
   int getYear();
   char* getTitle();
- protected:
-  //title, year what is unique to parent class as well as get title 
+  virtual void print(); 
+ protected: 
   int year;
   char title[30]; 
 };
